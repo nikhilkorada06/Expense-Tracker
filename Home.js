@@ -31,7 +31,8 @@ loginButton.addEventListener('click', function() {
             alert('Incorrect password. Please try again.');
         }
     }
-    else {
+    else 
+    {
         users[userName] = {userName, password, transactions: []};
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('currentUser', JSON.stringify(users[userName]));
